@@ -1,59 +1,139 @@
-/* global CSS*/
+/*imported fonts from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Montserrat:wght@500&family=Open+Sans:wght@700&display=swap');
+
+/* global 
+font-family: 'Angkor', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+CSS*/
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-}
-
-body{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
     background: black;
 }
+
+
 /*css for head */
 div.head{
-    height: 100vh;
-    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/*Navigation*/
-nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-    color: white;
-}
 /*adding style to logo*/
-nav a.logo{
+div a.logo{
     color:white;
     font-size: 2.3em; 
+    font-family: 'Monoton', sans-serif;
     letter-spacing: 1px;  
+    margin-right: auto;
     text-decoration: none;
-    font-weight: bold; 
+    cursor: pointer;
 }
 /*adding color to span text*/
 a.logo span{
     color: red;
+    font-family: 'Monoton', sans-serif;
 }
 
+
 /*adding styles to navigation list*/
-nav ul li{
-    display: inline-block;
-    font-weight: bold;
-    padding: 20px;
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
 }
 
 /*adding style to navitaiton link*/
 nav ul li a{
     text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 30px 0 0;
     color: white;
     letter-spacing: 1px;
     font-size: 1.2em;
     text-transform: uppercase;
+    cursor: pointer;
 }
 /*adding hover effect on nav links*/
 nav ul li a:hover{
     color: red;
     transition: .5s;
+}
+
+/*stying main*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right{
+    max-width: 700px;
+    height: auto;
+}
+
+.intro{
+    width: 38%;
+    margin-top: 10%;
+}
+
+/*Styling intro section*/
+div.intro h1{
+    color:white;
+    font-size: 3rem;
+    font-family: 'Angkor', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+div h2 span{
+    color: red;
+}
+
+div.intro h2{
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+div.intro p{
+    color: whitesmoke;
+    line-height: 25px;
+    margin:20px 0;
+    font-family: 'Manrope', sans-serif;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+div.intro a{
+    color:white;
+    background: red;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: inherit;
+    display: inline-block;
+    border-radius: 25px;
+   
+}
+
+div.intro a:hover{
+color:  black;
 }
