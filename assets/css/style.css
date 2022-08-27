@@ -18,8 +18,6 @@ CSS*/
     box-sizing: border-box;
     background: black;
 }
-
-
 /*css for head */
 div.head{
     height: 100px;
@@ -102,7 +100,7 @@ div.intro h1{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-div h2 span{
+div.intro h2 span{
     color: red;
 }
 
