@@ -16,6 +16,9 @@ CSS*/
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+}
+
+body{
     background: black;
 }
 /*css for head */
@@ -89,6 +92,7 @@ main{
 .intro{
     width: 38%;
     margin-top: 10%;
+    padding: 0 0 0 16px;
 }
 
 /*Styling intro section*/
@@ -96,7 +100,6 @@ div.intro h1{
     color:white;
     font-size: 3rem;
     font-family: 'Angkor', sans-serif;
-    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -114,8 +117,8 @@ div.intro h2{
 
 div.intro p{
     color: whitesmoke;
-    line-height: 25px;
-    margin:20px 0;
+    line-height: 20px;
+    margin:25px 0;
     font-family: 'Manrope', sans-serif;
     font-family: monospace;
     letter-spacing: 2px;
@@ -135,3 +138,49 @@ div.intro a{
 div.intro a:hover{
 color:  black;
 }
+
+div.about-container {
+    display: flex;
+    width: 80%;
+    height: 22em;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 9px 9px 19px rgba(194, 192, 192, 0.2);
+    margin: auto;
+    justify-content:space-evenly;
+    align-items: center;
+ }
+
+div .container-right img{
+    max-width: 250px;
+    margin-right: auto;
+
+ }
+
+.about-txt{
+    width: 700px;
+ }
+
+
+.about-txt h1{
+    color: #403e3e;
+    font-size: 39px;
+    line-height: 0%;
+    margin-bottom: 27px
+
+}
+
+.about-txt h3{
+    font-size: 20px;
+    color: #942f2f;
+    margin-bottom: 19px;
+}
+.about-txt p{
+    color: #5d5a5a;
+    line-height: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
