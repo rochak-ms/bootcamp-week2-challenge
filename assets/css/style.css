@@ -1,1 +1,59 @@
 /* global CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: black;
+}
+/*css for head */
+div.head{
+    height: 100vh;
+    width: 100%;
+}
+
+/*Navigation*/
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: white;
+}
+/*adding style to logo*/
+nav a.logo{
+    color:white;
+    font-size: 2.3em; 
+    letter-spacing: 1px;  
+    text-decoration: none;
+    font-weight: bold; 
+}
+/*adding color to span text*/
+a.logo span{
+    color: red;
+}
+
+/*adding styles to navigation list*/
+nav ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*adding style to navitaiton link*/
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+/*adding hover effect on nav links*/
+nav ul li a:hover{
+    color: red;
+    transition: .5s;
+}
