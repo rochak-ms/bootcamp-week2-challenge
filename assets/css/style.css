@@ -4,18 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Open+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Manrope:wght@400;500&family=Monoton&family=Montserrat:wght@500&family=Open+Sans:wght@700&display=swap');
 
-/* global 
-font-family: 'Angkor', cursive;
-font-family: 'Manrope', sans-serif;
-font-family: 'Monoton', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-CSS*/
+/* global CSS */
 *{
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+}
+
+body{
     background: black;
 }
 /*css for head */
@@ -134,4 +131,51 @@ div.intro a{
 
 div.intro a:hover{
 color:  black;
+}
+
+div.about-container {
+    width: 80%;
+    height: 330px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 9px 9px 19px rgba(194, 192, 192, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: auto;
+    justify-content:space-evenly;
+    align-items: center;
+ }
+
+ div.about-container img{
+    max-width: 400px;
+    height: auto;
+ }
+
+div.about-txt{
+    width: 700px;
+ }
+
+
+div.about-txt h1{
+    color: #403e3e;
+    font-size: 39px;
+    line-height: 0%;
+    margin-bottom: 27px
+
+}
+
+div.about-txt h3{
+    font-size: 20px;
+    color: #942f2f;
+    margin-bottom: 19px;
+}
+div.about-txt p{
+    color: #5d5a5a;
+    line-height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
 }
