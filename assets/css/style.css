@@ -196,6 +196,7 @@ div.work{
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     align-items: center;
     justify-content: space-evenly;
 }
