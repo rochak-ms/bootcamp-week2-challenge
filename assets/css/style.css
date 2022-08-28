@@ -135,22 +135,24 @@ color:  black;
 
 div.about-container {
     width: 80%;
-    height: 330px;
+    height: auto;
     background-color: #e7e7e7;
     border-radius: 20px;
     box-shadow: 9px 9px 19px rgba(194, 192, 192, 0.2);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     flex-shrink: 1;
     flex-grow: 1;
     margin: auto;
     justify-content:space-evenly;
     align-items: center;
+    margin-bottom: 30px;
  }
 
  div.about-container img{
     max-width: 400px;
+    padding: 1% 0;
     height: auto;
  }
 
@@ -178,4 +180,72 @@ div.about-txt p{
     font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
     letter-spacing: 1px;
+}
+
+div.app-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7e7e7;
+}
+
+div.work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #403e3e;
+    font-size: 39px;
+    margin: 2rem 0 0 0;
+}
+
+.app, .app1{
+    position: relative;
+    margin: 1rem;
+}
+
+div.app1 img{
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+div.app img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.app h3, .app1 h3{
+    position: absolute;
+    font-size: 22px;
+    font-family: 'Manrope', sans-serif;
+    height: 2em;
+    padding: 0.4em 0.4em 0 0.4em;
+    font-weight: 500;
+    color: White;
+    border-radius: 0px 10px 0px 10px;
+    left: 0em;
+    bottom: 60px;
+    background-color: grey;
+}
+
+.app img:hover, h3:hover, .app1 img:hover{
+    opacity: 1; 
+    transform: scale(1.1);
+    transition: 0.5s ease 0.5s;
+    filter: none;
 }
