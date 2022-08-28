@@ -78,12 +78,12 @@ main{
     justify-content: center;
 }
 
-.content-right{
+div.content-right{
     max-width: 700px;
     height: auto;
 }
 
-.intro{
+div.intro{
     width: 38%;
     margin-top: 10%;
 }
@@ -261,6 +261,7 @@ div.app img{
     
 }
 
+/*styline footer for html*/
 footer{
     background: #111;
     display: flex;
@@ -317,6 +318,7 @@ footer{
     transition-delay: color .4s ease;
 }
 
+/*adding hover effect to link*/
 .social a:hover i{
     color: red;
 }
