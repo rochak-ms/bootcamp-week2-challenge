@@ -13,7 +13,7 @@
 }
 
 body{
-    background: black;
+    background: #111;
 }
 /*css for head */
 div.head{
@@ -138,7 +138,6 @@ div.about-container {
     height: auto;
     background-color: #e7e7e7;
     border-radius: 20px;
-    box-shadow: 9px 9px 19px rgba(194, 192, 192, 0.2);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -189,6 +188,7 @@ div.app-container{
     align-items: center;
     flex-direction: column;
     background-color: #e7e7e7;
+    padding-bottom: 2em;
 }
 
 div.work{
@@ -229,18 +229,28 @@ div.app img{
     border-radius: 15px;
 }
 
-.app h3, .app1 h3{
+.app a h3, .app1 a h3{
     position: absolute;
-    font-size: 22px;
-    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
     height: 2em;
     padding: 0.4em 0.4em 0 0.4em;
-    font-weight: 500;
-    color: White;
+    color:#fff;
     border-radius: 0px 10px 0px 10px;
     left: 0em;
-    bottom: 60px;
-    background-color: grey;
+    bottom: 2px;
+    letter-spacing: 0.1rem;
+    background-color: rgb(54 72 167 / 88%);;
+}
+.app a h3:hover, .app1 a h3:hover{
+    color: #111;
+    opacity: 1; 
+    transform: scale(1.2);
+    transition: 0.3s ease 0.3s;
+    filter: none;
 }
 
 .app img:hover, h3:hover, .app1 img:hover{
@@ -248,4 +258,89 @@ div.app img{
     transform: scale(1.1);
     transition: 0.5s ease 0.5s;
     filter: none;
+    
 }
+
+footer{
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding:1rem;
+    margin: 1px auto 0 auto;
+    justify-content: center;
+    width: 100vh;
+    font-family: 'Manrope', sans-serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    width: 100vh;
+    border-top: 1px #fff solid;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social a i{
+    font-size: 2rem;
+    transition-delay: color .4s ease;
+}
+
+.social a:hover i{
+    color: red;
+}
+
+.footer-bott{
+    width:100vh;
+    margin-top: -3rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bott p{
+    text-transform: capitalize;
+    color: rgba(191, 188, 188, 0.897);
+    word-spacing: 2px;
+    font-size: 14px;
+
+}
+
+.footer-bott span{
+    text-transform: uppercase;
+    opacity: .8;
+    color: red;
+    font-size: 14px;
+    font-weight: 200px;
+}
+
