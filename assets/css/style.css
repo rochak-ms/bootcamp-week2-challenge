@@ -17,8 +17,9 @@ body{
 }
 /*css for head */
 div.head{
-    height: 100px;
+    max-height: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     padding: 30px 10%;
     align-items: center;
@@ -39,12 +40,18 @@ div a.logo{
 a.logo span{
     color: red;
     font-family: 'Monoton', sans-serif;
+    letter-spacing: 1px;  
+    margin-right: auto;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
 /*adding styles to navigation list*/
 nav ul{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     list-style-type: none;
     align-items: center;
 }
@@ -71,6 +78,7 @@ nav ul li a:hover{
 /*stying main*/
 main{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     flex-shrink: 1;
     height: calc(100vh - 100px);
@@ -193,6 +201,7 @@ div.app-container{
 
 div.work{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
@@ -270,7 +279,7 @@ footer{
     padding:1rem;
     margin: 1px auto 0 auto;
     justify-content: center;
-    width: 100vh;
+    max-width: 100vh;
     font-family: 'Manrope', sans-serif;
     padding-top: 40px;
     color: white;
@@ -278,7 +287,7 @@ footer{
 
 .footer-content{
     display: flex;
-    width: 100vh;
+    max-width: 100vh;
     border-top: 1px #fff solid;
     padding-top: 2rem;
     padding-bottom: 0;
@@ -324,7 +333,7 @@ footer{
 }
 
 .footer-bott{
-    width:100vh;
+    max-width:100vh;
     margin-top: -3rem;
     padding: 20px 0;
     text-align: center;
@@ -346,3 +355,132 @@ footer{
     font-weight: 200px;
 }
 
+/*adding media query to add responsiveness to Website*/
+ 
+@media screen and (max-width: 1188px) {
+
+    div.about-container {
+        flex-direction: column;
+    }
+    div.about-txt {
+        text-align: center;
+        padding: 4%;
+    }
+}
+
+
+/*media query for header*/
+@media screen and (max-width: 981px){
+    div a.logo{
+        margin: auto;
+    }
+    nav{
+        display: flex;
+        margin: auto;
+        height: 3em;
+
+        }
+
+}
+  
+@media screen and (max-width: 873px) {
+
+    main{
+        flex-direction: row;
+    }
+    main div img{
+        width:400px;
+        height: auto;
+    }
+
+    div.intro{
+        width: 38%;
+        margin-top: 10%;
+    }
+  
+    div.intro h1{
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+    }
+    div.intro h2{
+        font-size: 25px;
+        margin-bottom: 13px;
+        letter-spacing: 0px;
+    }
+    
+    div.intro p{
+        line-height: 21px;
+        margin:9px 0;
+        letter-spacing: 1px;
+    }
+    
+    div.intro a{
+        padding: 7px 6px;
+        border-radius: 4px;
+        font-size: 12px;
+       
+    }
+
+    div.about-container {
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    div.about-txt {
+        text-align: center;
+        padding: 4%;
+    }
+
+    div.intro {
+        width: 38%;
+        display: flex;
+        margin-top: 10%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    footer{
+        width: 100%
+    }
+
+}
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 658px) {
+   
+    div.intro{
+        width: 75%;
+        margin-top: -17%;
+    }
+    div.intro h1{
+        font-size: 1.6rem;
+        margin-bottom: 2px;
+    }
+    div.intro h2{
+        font-size: 18px;
+        margin-bottom: 8px;
+        letter-spacing: 0px;
+    }
+    
+    div.intro p{
+        line-height: 16px;
+        margin:9px 0;
+        letter-spacing: 1px;
+    }
+    
+    div.intro a{
+        padding: 7px 6px;
+        border-radius: 4px;
+        font-size: 12px;
+       
+    }
+
+    div.app1 img {
+        max-width: 350px;
+        display: flex;
+    }
+
+}
