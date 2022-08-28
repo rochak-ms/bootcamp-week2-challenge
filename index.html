@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking CSS file to Html-->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>ROCHAK | Portfoilio Website</title>
+   <!--Linking Font Awesome kit code-->
+   <script src="https://kit.fontawesome.com/bfc7a5d487.js" crossorigin="anonymous"></script>
+   <!--Title of the Page--> 
+   <title>ROCHAK | Portfoilio Website</title>
 </head>
 <body>
     <!--Head seciton start-->
-    <div class="head">
+    <div class="head" id="home">
         <!--logo for website start-->
         <a href="#" class="logo">R.S Port<span>folio</span></a>
         <!--navigation bar start-->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -36,12 +40,12 @@
             <h1>Rochak Shrestha</h1>
             <p>Welcome to my Portfolio Website.<br>
             Click on the link below to know more about me.</p>
-            <a href="#">About Me</a>
+            <a href="#about">About Me</a>
         </div>
     </main>
 
     <!-- About section-->
-    <div class="about-container">
+    <div class="about-container" id="about">
         <!--Image here-->
         <img src="./assets/images/IMG_2.png" width="250px"> 
         <!--About Text-->
@@ -58,7 +62,7 @@
     </div>
 
     <!-- Work section start here-->
-    <div class="app-container" id="app-container">
+    <div class="app-container" id="work">
         <div class="title">
         <h2>WORKS</h2>
         </div>
@@ -85,5 +89,20 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-content" id="contact">
+            <h3>Contact Me</h3>
+            <ul class="social">
+                <li><a href="https://github.com/rochak-ms" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/x.bitzz" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=%2B61435319711&text&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/intoxicated_stha/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bott">
+            <p>copyright &copy;2022 R.S Portfolio | designed by <span>Rochak</span></p>
+        </div>
+    </footer>
 </body>
 </html>
