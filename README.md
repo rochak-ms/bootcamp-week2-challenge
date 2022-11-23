@@ -20,7 +20,7 @@ This Week 2 bootcamp challenge. This Portfolio page is made from scratch using H
 
 ## Links
 Below is the link related to the project:
-- Project Homepage: https://rochak-ms.github.io/bootcamp-week2-challenge/
+- Project Homepage: https://rochak-ms.github.io/rochak-portfolio/
 - Repository: https://github.com/rochak-ms/bootcamp-week2-challenge
 
 # Final result
